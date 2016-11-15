@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>A08 - Responsive Images</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+        <!-- TODO - remove this -->
+    <script src="js/jquery.js"></script>
+    <style>
+    .fixedHeader {
+        position: fixed;
+        top: 0px;
+        z-index: 1000;
+    }
+    </style>
+	<script>
+		//Choose if you want the window width to display - 1 = yes, 0 = no
+		var showWidth = 1;
+		
+		if(showWidth == 1){
+        	$(document).ready(function (){
+            	$(window).resize(function(){
+                	var width = $(window).width();
+                	document.getElementById("output_width").innerHTML='Window Width:'+width.toString();
+           		});
+        	});
+		}
+    </script>
+    
+</head>
+<body>
+    
+    <div class="fixedHeader">
+        <div id="output_width"></div><!--Widow width inserted here-->
+    </div>
+ 
+ 
+    <header>
+        <h1>MAD9013 - A09 Images</h1>
+    </header>
+    
+    
+    <main>
+        <ul>
+            <li>
+                <picture>
+                    <!-- SM - 400x300 // MED - 600 x 450 // LARGE - 800 x 600 -->
+                    <source srcset="http://placehold.it/400x300" media="(max-width: 700px)">
+                    <source srcset="http://placehold.it/600x450" media="(min-width: 700px) and (max-width: 1500px)">
+                    <source srcset="http://placehold.it/800x600" media="(min-width: 1500px)">
+    
+                    <!-- Set the DEFAULT image (medium) -->
+                    <img srcset="http://placehold.it/600x450" alt="TEST" title="TEST">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <!-- SM - 400x300 // MED - 600 x 450 // LARGE - 800 x 600 -->
+                    <source srcset="http://placehold.it/400x300/FF69B4/ffffff" media="(max-width: 700px)">
+                    <source srcset="http://placehold.it/600x450/FF69B4/ffffff" media="(min-width: 700px) and (max-width: 1500px)">
+                    <source srcset="http://placehold.it/800x600/FF69B4/ffffff" media="(min-width: 1500px)">
+    
+                    <!-- Set the DEFAULT image (medium) -->
+                    <img srcset="http://placehold.it/600x450/FF69B4/ffffff" alt="TEST" title="TEST">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <!-- SM - 400x300 // MED - 600 x 450 // LARGE - 800 x 600 -->
+                    <source srcset="http://placehold.it/400x300/3B5323/ffffff" media="(max-width: 700px)">
+                    <source srcset="http://placehold.it/600x450/3B5323/ffffff" media="(min-width: 700px) and (max-width: 1500px)">
+                    <source srcset="http://placehold.it/800x600/3B5323/ffffff" media="(min-width: 1500px)">
+    
+                    <!-- Set the DEFAULT image (medium) -->
+                    <img srcset="http://placehold.it/600x450/3B5323/ffffff" alt="TEST" title="TEST">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <!-- SM - 400x300 // MED - 600 x 450 // LARGE - 800 x 600 -->
+                    <source srcset="http://placehold.it/400x300" media="(max-width: 700px)">
+                    <source srcset="http://placehold.it/600x450" media="(min-width: 700px) and (max-width: 1500px)">
+                    <source srcset="http://placehold.it/800x600" media="(min-width: 1500px)">
+    
+                    <!-- Set the DEFAULT image (medium) -->
+                    <img srcset="http://placehold.it/600x450" alt="TEST" title="TEST">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <!-- SM - 400x300 // MED - 600 x 450 // LARGE - 800 x 600 -->
+                    <source srcset="http://placehold.it/400x300/FF69B4/ffffff" media="(max-width: 700px)">
+                    <source srcset="http://placehold.it/600x450/FF69B4/ffffff" media="(min-width: 700px) and (max-width: 1500px)">
+                    <source srcset="http://placehold.it/800x600/FF69B4/ffffff" media="(min-width: 1500px)">
+    
+                    <!-- Set the DEFAULT image (medium) -->
+                    <img srcset="http://placehold.it/600x450/FF69B4/ffffff" alt="TEST" title="TEST">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <!-- SM - 400x300 // MED - 600 x 450 // LARGE - 800 x 600 -->
+                    <source srcset="http://placehold.it/400x300/3B5323/ffffff" media="(max-width: 700px)">
+                    <source srcset="http://placehold.it/600x450/3B5323/ffffff" media="(min-width: 700px) and (max-width: 1500px)">
+                    <source srcset="http://placehold.it/800x600/3B5323/ffffff" media="(min-width: 1500px)">
+    
+                    <!-- Set the DEFAULT image (medium) -->
+                    <img srcset="http://placehold.it/600x450/3B5323/ffffff" alt="TEST" title="TEST">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <!-- SM - 400x300 // MED - 600 x 450 // LARGE - 800 x 600 -->
+                    <source srcset="http://placehold.it/400x300" media="(max-width: 700px)">
+                    <source srcset="http://placehold.it/600x450" media="(min-width: 700px) and (max-width: 1500px)">
+                    <source srcset="http://placehold.it/800x600" media="(min-width: 1500px)">
+    
+                    <!-- Set the DEFAULT image (medium) -->
+                    <img srcset="http://placehold.it/600x450" alt="TEST" title="TEST">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <!-- SM - 400x300 // MED - 600 x 450 // LARGE - 800 x 600 -->
+                    <source srcset="http://placehold.it/400x300/FF69B4/ffffff" media="(max-width: 700px)">
+                    <source srcset="http://placehold.it/600x450/FF69B4/ffffff" media="(min-width: 700px) and (max-width: 1500px)">
+                    <source srcset="http://placehold.it/800x600/FF69B4/ffffff" media="(min-width: 1500px)">
+    
+                    <!-- Set the DEFAULT image (medium) -->
+                    <img srcset="http://placehold.it/600x450/FF69B4/ffffff" alt="TEST" title="TEST">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <!-- SM - 400x300 // MED - 600 x 450 // LARGE - 800 x 600 -->
+                    <source srcset="http://placehold.it/400x300/3B5323/ffffff" media="(max-width: 700px)">
+                    <source srcset="http://placehold.it/600x450/3B5323/ffffff" media="(min-width: 700px) and (max-width: 1500px)">
+                    <source srcset="http://placehold.it/800x600/3B5323/ffffff" media="(min-width: 1500px)">
+    
+                    <!-- Set the DEFAULT image (medium) -->
+                    <img srcset="http://placehold.it/600x450/3B5323/ffffff" alt="TEST" title="TEST">
+                </picture>
+            </li>
+        </ul>
+    </main>
+    
+    
+</body>
+</html>
