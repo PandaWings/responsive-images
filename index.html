@@ -7,42 +7,11 @@
     <title>A09 - Responsive Images</title>
     
     <link rel="stylesheet" href="css/style.css">
-    
-        <!-- TODO - remove this -->
-    <script src="js/jquery.js"></script>
-    <style>
-    .fixedHeader {
-        position: fixed;
-        top: 0px;
-        z-index: 1000;
-    }
-    </style>
-	<script>
-		//Choose if you want the window width to display - 1 = yes, 0 = no
-		var showWidth = 1;
-		
-		if(showWidth == 1){
-        	$(document).ready(function (){
-            	$(window).resize(function(){
-                	var width = $(window).width();
-                	document.getElementById("output_width").innerHTML='Window Width:'+width.toString();
-           		});
-        	});
-		}
-    </script>
-    
 </head>
 <body>
-    
-    <div class="fixedHeader">
-        <div id="output_width"></div><!--Widow width inserted here-->
-    </div>
- 
- 
     <header>
         <h1>Low Budget Tumblr Clone</h1>
     </header>
-    
     
     <main>
         <ul>
@@ -125,7 +94,6 @@
             </li>
         </ul>
     </main>
-    
     
 </body>
 </html>
